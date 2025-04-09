@@ -1,3 +1,74 @@
 body {
   margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  padding-top: 16px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: auto;
+  height: 40px;
+  display: block;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 40px;
+  align-items: center;
+}
+
+.nav ul li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 40px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.samsung,
+.smartphones,
+.gadgets,
+.tablets,
+.photo,
+.video {
+  color: #000;
+}
+
+.nav ul li a.apple,
+.nav ul li a.laptopsComputers {
+  color: #00acdc;
+}
+
+.nav ul li a.is-active::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #09f;
+  border-radius: 2px;
 }
